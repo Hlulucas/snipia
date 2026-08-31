@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import { getAllPages, getAllCategories } from '@/lib/seo-data';
 import { siteConfig } from '@/lib/site-config';
 import { generateWebsiteJsonLd } from '@/lib/jsonld-generators';

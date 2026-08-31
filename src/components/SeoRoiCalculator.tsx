@@ -134,7 +134,7 @@ Généré avec l'estimateur SEO Matrix Engine.`;
             </h2>
             <p className="calc-subheading">
               Estimez le trafic potentiel, les revenus générés et les économies budgétaires (SEA &amp; Rédaction)
-              en déployant un modèle de pages automatisées.
+              {pageCategory ? ` pour vos contenus "${pageCategory}".` : ' en déployant un modèle de pages automatisées.'}
             </p>
           </div>
 

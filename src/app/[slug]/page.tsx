@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getAllPages, getAllSlugs, getPageBySlug, getRelatedPages } from '@/lib/seo-data';
+import { getAllSlugs, getPageBySlug, getRelatedPages } from '@/lib/seo-data';
 import { siteConfig } from '@/lib/site-config';
 import {
   generateArticleJsonLd,
@@ -12,7 +12,6 @@ import JsonLdScript from '@/components/JsonLdScript';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import TableOfContents from '@/components/TableOfContents';
 import FaqAccordion from '@/components/FaqAccordion';
-import PageCard from '@/components/PageCard';
 import SeoRoiCalculator from '@/components/SeoRoiCalculator';
 
 interface PageProps {
