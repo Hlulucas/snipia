@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { siteConfig } from '@/lib/site-config';
 import { getAllCategories } from '@/lib/seo-data';
@@ -10,14 +11,18 @@ export default async function Footer() {
       <div className="footer-container">
         <div className="footer-grid">
           <div className="footer-col brand-col">
-            <div className="footer-brand">
-              <span className="brand-text">
-                SEO<span className="brand-highlight">Matrix</span>
-              </span>
-            </div>
+            <Link href="/" className="footer-brand" aria-label={`${siteConfig.siteName} Accueil`}>
+              <Image
+                src="/logo.svg"
+                alt={siteConfig.siteName}
+                width={120}
+                height={36}
+                className="brand-logo-img"
+              />
+            </Link>
             <p className="footer-desc">
-              Architecture Next.js pour le référencement naturel et la génération programmatique
-              (pSEO) à haute performance. Optimisé pour Google Search, Core Web Vitals et Schema.org.
+              Plateforme d&apos;automatisation vidéo et outils d&apos;intelligence artificielle pour créateurs de contenu,
+              podcasteurs et entreprises. Recyclage de contenus longs en formats courts viraux.
             </p>
             <div className="seo-tags-badge">
               <span>🚀 100% Static HTML</span>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icône de lecture vidéo "Snip" -->
+  <rect x="0" y="10" width="40" height="40" rx="12" fill="url(#aiGradient)" />
+  <polygon points="16,22 16,38 28,30" fill="#ffffff" />
+  <circle cx="32" cy="18" r="4" fill="#60A5FA" />
+  
+  <!-- Texte du Logo Snipia -->
+  <text x="52" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Snipia</text>
+  <text x="138" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#3B82F6">.</text>
+</svg>

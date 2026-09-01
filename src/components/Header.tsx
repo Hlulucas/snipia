@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { siteConfig } from '@/lib/site-config';
 
@@ -6,16 +7,14 @@ export default function Header() {
     <header className="site-header">
       <div className="header-container">
         <Link href="/" className="brand-logo" aria-label={`${siteConfig.siteName} Accueil`}>
-          <div className="brand-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-              <polyline points="2 17 12 22 22 17"></polyline>
-              <polyline points="2 12 12 17 22 12"></polyline>
-            </svg>
-          </div>
-          <span className="brand-text">
-            SEO<span className="brand-highlight">Matrix</span>
-          </span>
+          <Image
+            src="/logo.svg"
+            alt={siteConfig.siteName}
+            width={120}
+            height={36}
+            priority
+            className="brand-logo-img"
+          />
         </Link>
 
         <nav className="main-nav" aria-label="Navigation principale">
