@@ -37,6 +37,10 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
+    apple: [{ url: '/icon.svg', type: 'image/svg+xml' }],
+  },
 };
 
 export default function RootLayout({
@@ -48,7 +52,8 @@ export default function RootLayout({
     <html lang="fr" className={inter.variable}>
       <head>
         <meta name="theme-color" content="#0a0e1a" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
+        <link rel="apple-touch-icon" href="/icon.svg" />
       </head>
       <body>
         <div className="site-wrapper">

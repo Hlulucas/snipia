@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <defs>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond arrondi avec dégradé Snipia -->
+  <rect x="0" y="0" width="40" height="40" rx="10" fill="url(#aiGradient)" />
+  
+  <!-- Triangle symbole de lecture vidéo -->
+  <polygon points="16,12 16,28 28,20" fill="#ffffff" />
+  
+  <!-- Point lumineux d'accentuation IA -->
+  <circle cx="32" cy="8" r="4" fill="#60A5FA" />
+</svg>
