@@ -1057,6 +1057,55 @@ button, input {
   font-weight: 500;
 }
 
+.affiliate-promo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.16) 0%, rgba(249, 115, 22, 0.18) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.55);
+  color: #fef08a;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.2);
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.affiliate-promo-badge strong {
+  color: #ffffff;
+  background: rgba(245, 158, 11, 0.4);
+  border: 1px solid rgba(253, 224, 71, 0.5);
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+}
+
+.sidebar-promo-badge {
+  display: block;
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.15) 0%, rgba(249, 115, 22, 0.15) 100%);
+  border: 1px dashed rgba(245, 158, 11, 0.5);
+  color: #fef08a;
+  font-size: 0.775rem;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.sidebar-promo-badge strong {
+  color: #ffffff;
+  background: rgba(245, 158, 11, 0.35);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+}
+
 /* Sidebar Affiliate Card */
 .sidebar-affiliate-card {
   background: linear-gradient(145deg, rgba(99, 102, 241, 0.12) 0%, rgba(18, 24, 38, 0.9) 100%);

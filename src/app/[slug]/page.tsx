@@ -209,6 +209,11 @@ export default async function DynamicSeoPage({ params }: PageProps) {
               </div>
 
               <div className="affiliate-btn-container">
+                {page.affiliateLink.includes("pictory.ai") && (
+                  <div className="affiliate-promo-badge">
+                    🎁 -20% de réduction avec le code promo exclusif : <strong>SNIPIA</strong>
+                  </div>
+                )}
                 <a
                   href={page.affiliateLink}
                   target="_blank"
@@ -361,6 +366,11 @@ export default async function DynamicSeoPage({ params }: PageProps) {
                   <p className="sidebar-affiliate-desc">
                     La solution clé en main recommandée par nos experts pour ce sujet.
                   </p>
+                  {page.affiliateLink.includes("pictory.ai") && (
+                    <div className="sidebar-promo-badge">
+                      🎁 -20% avec le code exclusif : <strong>SNIPIA</strong>
+                    </div>
+                  )}
                   <a
                     href={page.affiliateLink}
                     target="_blank"
