@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        source: "/seo-local-google-business-profile-optimisation",
+        destination: "/seo-local-google-business-profile-ia",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
